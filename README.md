@@ -1,9 +1,9 @@
-![whatsapp-theme-dashboard-dark](https://user-images.githubusercontent.com/27996405/155767773-e9dcdee3-f3da-4a9b-9512-d92db8c8968b.png)
+![whatsapp-theme-screenshot-darkmode](https://user-images.githubusercontent.com/27996405/156218537-c1f58489-7d0e-4c97-8d88-4689b8b404a2.png)
 
 # Whatsapp Theme
 
-Home Assistant theme based on Whatsapp colors by Robin Wittebol.
-Supports dark and light mode.
+Whatsapp Theme for Home Assistant. Supports light and dark mode.
+By Robin Wittebol.
 
 ## Preparation
 
