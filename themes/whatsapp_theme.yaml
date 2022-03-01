@@ -1,7 +1,7 @@
 # Whatsapp Theme for Home Assistant
 # By Robin Wittebol
 # 
-# Version 1.0.0
+# Version 1.0.1
 # 
 # Supports dark and light mode
 # https://github.com/robinwittebol/whatsapp-theme
@@ -251,6 +251,9 @@ whatsapp_theme:
       paper-toast-background-color: var(--wa-modal-bg-dark)
       paper-toast-color: var(--primary-text-color)
 
+      # Progressbar
+      mdc-linear-progress-buffer-color: 'rgba(0,0,0,0.4)'
+
     # Light mode
     light:
       # Header:
@@ -384,3 +387,6 @@ whatsapp_theme:
       # Toasts
       paper-toast-background-color: var(--wa-modal-bg)
       paper-toast-color: var(--primary-text-color)
+
+      # Progressbar
+      mdc-linear-progress-buffer-color: 'rgba(0,0,0,0.2)'
