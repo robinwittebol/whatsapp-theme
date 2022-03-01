@@ -2,8 +2,8 @@
 
 # Whatsapp Theme
 
-Whatsapp Theme for Home Assistant. Supports light and dark mode.
-By Robin Wittebol.
+Home Assistant theme based on Whatsapp colors by Robin Wittebol.
+Supports dark and light mode.
 
 ## Preparation
 
