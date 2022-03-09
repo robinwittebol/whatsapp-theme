@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2022-03-09
+
+- Added ha-card-background variable
+- Cleaned up unused variables
+
 ## [1.1.0] - 2022-03-01
 
 - Improved lightmode
