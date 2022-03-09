@@ -11,7 +11,6 @@ whatsapp_theme:
   # General Colors Light
   wa-teal: var(--wa-primary)
   wa-green: '#25d366'
-  # wa-blue: '#007bfc'
   wa-blue: '#0F51AB'
   wa-pink: '#ff2e74'
   wa-purple: '#7f66ff'
@@ -36,14 +35,11 @@ whatsapp_theme:
   wa-black-dark: '#00110d'
 
   # UI Colors Light
-  # wa-bg: '#f8f8f8'
   wa-bg: '#f0f2f5'
   wa-bg-2: '#f7f8fa'
-  # wa-header: '#006b59'
   wa-header: '#008069'
   wa-convo-bg: '#c9c3bb'
   wa-modal-bg: '#fff'
-  # wa-primary: '#007f68'
   wa-primary: '#00a884'
   wa-primary-2: '#115c4d'
   wa-text: '#121b20'
@@ -125,6 +121,10 @@ whatsapp_theme:
   mini-media-player-accent-color: var(--text-primary-color)
   mini-media-player-icon-color: var(--text-primary-color)
 
+  # Sun card
+  sun-card-text-color: var(--primary-text-color);
+  sun-card-subtitle-color: var(--secondary-text-color);
+
   modes:
     # Dark mode
     dark:
@@ -142,7 +142,6 @@ whatsapp_theme:
       light-primary-color: var(--primary-color)
       primary-background-color: var(--wa-bg-dark)
       secondary-background-color: var(--wa-bg-dark)
-      # divider-color: var(--wa-divider-dark)
       divider-color: rgba(255,255,255,.08)
       accent-color: var(--wa-primary-dark)
       mdc-theme-primary: var(--wa-primary-dark)
@@ -152,8 +151,6 @@ whatsapp_theme:
       secondary-text-color: var(--wa-text-dark-2)
       text-primary-color: '#fff'
       disabled-text-color: var(--wa-text-dark-2)
-      # mdc-theme-on-primary: ''
-      # mdc-theme-on-secondary: var(--secondary-text-color)
       mdc-theme-on-secondary: '#fff'
 
       # Sidebar
@@ -201,7 +198,6 @@ whatsapp_theme:
       markdown-code-background-color: var(--wa-bg-dark)
 
       # Checkboxes
-      # mdc-select-fill-color: var(--wa-primary-dark)
       mdc-select-ink-color: var(--primary-text-color)
       mdc-select-label-ink-color: var(--secondary-text-color)
       mdc-select-idle-line-color: var(--primary-text-color)
@@ -209,7 +205,6 @@ whatsapp_theme:
       mdc-select-hover-line-color: var(--accent-color)
 
       # Inputs
-      # input-fill-color: var(--secondary-background-color)
       input-dropdown-icon-color: var(--secondary-text-color)
       input-ink-color: var(--primary-text-color)
       input-label-ink-color: var(--secondary-text-color)
@@ -217,7 +212,6 @@ whatsapp_theme:
       input-hover-line-color: var(--accent-color)
 
       # Modals
-      # mdc-dialog-scroll-divider-color: 'rgba(255, 255, 255, 0.12)'
       mdc-dialog-scrim-color: 'rgba(0, 0, 0, 0.5)'
 
       # Ripple
@@ -238,15 +232,8 @@ whatsapp_theme:
       state-not_home-color: var(--wa-red)
       state-unknown-color: var(--wa-gray)
       state-idle-color: var(--wa-gray)
-      # state-climate-auto-color: #008000
-      # state-climate-eco-color: #00ff7f
       state-climate-cool-color: var(--primary-color)
       state-climate-heat-color: var(--primary-color)
-      # state-climate-manual-color: #44739e
-      # state-climate-off-color: var(--wa-gray)
-      # state-climate-fan_only-color: #8a8a8a
-      # state-climate-dry-color: #efbd07
-      # state-climate-idle-color: #8a8a8a
 
       # Graphs
       graph-color-1: var(--wa-teal-dark)
@@ -280,7 +267,6 @@ whatsapp_theme:
       light-primary-color: var(--wa-bubble-bg)
       primary-background-color: var(--wa-bg)
       secondary-background-color: var(--wa-bg)
-      # divider-color: var(--wa-divider)
       divider-color: 'rgba(0, 0, 0, .08)'
       accent-color: var(--wa-primary)
       mdc-theme-primary: var(--wa-primary)
@@ -290,8 +276,6 @@ whatsapp_theme:
       secondary-text-color: var(--wa-text-2)
       text-primary-color: '#fff'
       disabled-text-color: var(--secondary-text-color)
-      # mdc-theme-on-primary: ''
-      # mdc-theme-on-secondary: var(--wa-text-dark)
       mdc-theme-on-secondary: '#fff'
 
       # Sidebar
@@ -300,7 +284,6 @@ whatsapp_theme:
       # Buttons
       paper-item-icon-color: var(--wa-text-2)
       paper-item-icon-active-color: var(--wa-primary)
-      # mdc-theme-on-primary: var(--wa-text-dark)
 
       # Labels
       label-badge-background-color: var(--wa-gray)
@@ -340,7 +323,6 @@ whatsapp_theme:
       markdown-code-background-color: var(--wa-bg)
 
       # Checkboxes
-      # mdc-select-fill-color: var(--wa-primary)
       mdc-select-ink-color: var(--primary-text-color)
       mdc-select-label-ink-color: var(--secondary-text-color)
       mdc-select-idle-line-color: var(--primary-text-color)
@@ -348,7 +330,6 @@ whatsapp_theme:
       mdc-select-hover-line-color: var(--accent-color)
 
       # Inputs
-      # input-fill-color: var(--secondary-background-color)
       input-dropdown-icon-color: var(--secondary-text-color)
       input-ink-color: var(--primary-text-color)
       input-label-ink-color: var(--secondary-text-color)
@@ -356,7 +337,6 @@ whatsapp_theme:
       input-hover-line-color: var(--accent-color)
 
       # Modals
-      # mdc-dialog-scroll-divider-color: 'rgba(0, 0, 0, 0.12)'
       mdc-dialog-scrim-color: 'rgba(0, 0, 0, 0.5)'
 
       # Ripple
@@ -377,15 +357,8 @@ whatsapp_theme:
       state-not_home-color: var(--wa-red)
       state-unknown-color: var(--wa-gray)
       state-idle-color: var(--wa-gray)
-      # state-climate-auto-color: #008000
-      # state-climate-eco-color: #00ff7f
       state-climate-cool-color: var(--primary-color)
       state-climate-heat-color: var(--primary-color)
-      # state-climate-manual-color: #44739e
-      # state-climate-off-color: var(--wa-gray)
-      # state-climate-fan_only-color: #8a8a8a
-      # state-climate-dry-color: #efbd07
-      # state-climate-idle-color: #8a8a8a
 
       # Graphs
       graph-color-1: var(--wa-teal)
