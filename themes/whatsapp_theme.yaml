@@ -171,6 +171,7 @@ whatsapp_theme:
 
       # Cards
       card-background-color: var(--wa-header-dark)
+      ha-card-background: var(--wa-header-dark)
       ha-card-box-shadow: '0 1px 1.5px rgba(11, 20, 26, .76)'
       paper-dialog-background-color: var(--card-background-color)
       paper-card-background-color: var(--card-background-color)
@@ -296,6 +297,7 @@ whatsapp_theme:
 
       # Cards
       card-background-color: '#fff'
+      ha-card-background: '#fff'
       ha-card-box-shadow: '0 1px 1.5px rgba(11, 20, 26, .16)'
       paper-dialog-background-color: var(--card-background-color)
       paper-card-background-color: var(--card-background-color)
