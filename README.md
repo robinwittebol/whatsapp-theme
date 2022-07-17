@@ -5,6 +5,9 @@
 Home Assistant theme based on Whatsapp colors by Robin Wittebol.
 Supports dark and light mode.
 
+## Disclaimer
+This theme is not made by or associated with Whatsapp or Meta.
+
 ## Preparation
 
 1. Make sure that in your **configuration.yaml** file you have the following:
