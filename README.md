@@ -2,7 +2,7 @@
 
 # Whatsapp Theme
 
-Home Assistant theme based on Whatsapp colors by Robin Wittebol.
+Home Assistant theme inspired by WhatsApp. Made by Robin Wittebol.
 Supports dark and light mode.
 
 ## Disclaimer

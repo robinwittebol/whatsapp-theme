@@ -1,7 +1,7 @@
-# Whatsapp Theme for Home Assistant
+# WhatsApp Theme for Home Assistant
 # By Robin Wittebol
 # 
-# Version 1.1.1
+# Version 1.2.0
 # 
 # Supports light and dark mode
 # https://github.com/robinwittebol/whatsapp-theme
@@ -10,7 +10,8 @@ whatsapp_theme:
 
   # General Colors Light
   wa-teal: var(--wa-primary)
-  wa-green: '#25d366'
+  wa-green: var(--wa-primary)
+  wa-green-rgb: 0, 168, 132;
   wa-blue: '#0F51AB'
   wa-pink: '#ff2e74'
   wa-purple: '#7f66ff'
@@ -23,16 +24,19 @@ whatsapp_theme:
 
   # General Colors Dark
   wa-teal-dark: var(--wa-primary-dark)
-  wa-green-dark: var(--wa-green-dark)
+  wa-green-dark: var(--wa-primary-dark)
+  wa-green-dark-rgb: 0, 168, 132;
   wa-blue-dark: var(--wa-blue)
   wa-pink-dark: var(--wa-pink)
   wa-purple-dark: var(--wa-purple)
   wa-orange-dark: var(--wa-orange)
-  wa-red-dark: var(--wa-red)
+  # wa-red-dark: var(--wa-red)
+  wa-red-dark: '#b61313'
   wa-yellow-dark: var(--wa-yellow)
   wa-cyan-dark: var(--wa-cyan)
-  wa-gray-dark: '#1a2429'
-  wa-black-dark: '#00110d'
+  # wa-gray-dark: '#1a2429'
+  wa-gray-dark: var(--wa-gray)
+  wa-black-dark: var(--wa-black)
 
   # UI Colors Light
   wa-bg: '#f0f2f5'
@@ -42,7 +46,8 @@ whatsapp_theme:
   wa-modal-bg: '#fff'
   wa-primary: '#00a884'
   wa-primary-2: '#115c4d'
-  wa-text: '#121b20'
+  wa-text-old: '#121b20'
+  wa-text: '#32342f'
   wa-text-2: '#707f86'
   wa-badge-bg: '#c3c7c9'
   wa-bubble-bg: '#e6ffdb'
@@ -63,9 +68,26 @@ whatsapp_theme:
 
   # Common
   # Header
-  header-height: '60px'
+  # header-height: '60px'
+  header-height: '56px'
 
   # Main UI
+  # masonry-view-card-margin: '4px 16px 8px'
+  # masonry-view-card-margin: '16px 8px'
+  # grid-card-gap: '16px'
+  # stack-card-gap: '16px'
+  # ha-section-grid-row-gap: '16px'
+  # ha-section-grid-column-gap: '16px'
+
+  # Badges
+  ha-label-badge-border-radius: '16px'
+  ha-label-badge-color: var(--primary-color)
+
+  # Errors/warnings
+  error-color: var(--red-color)
+  warning-color: var(--orange-color)
+  success-color: var(--green-color)
+  info-color: var(--green-color)
 
   # Text
   paper-font-headline_-_font-size: '16px'
@@ -79,10 +101,12 @@ whatsapp_theme:
 
   # Buttons
   mdc-theme-on-primary: '#fff'
+  mdc-button-outline-color: 'rgba(0, 168, 132, .3)'
 
   # Cards
   ha-card-border-radius: '8px'
-  ha-card-border-color: var(--divider-color)
+  ha-card-border-width: '0'
+  ha-card-border-color: 'transparent'
   ha-card-header-font-size: '16px'
 
   # Inputs
@@ -101,17 +125,59 @@ whatsapp_theme:
   paper-slider-pin-color: var(--paper-slider-knob-color)
   paper-slider-active-color: var(--paper-slider-knob-color)
   paper-slider-secondary-color: var(--light-primary-color)
+  control-circular-slider-color: var(--primary-color)
+  
+  # Select
+  control-select-border-radius: var(--ha-card-border-radius)
+  control-select-button-border-radius: var(--ha-card-border-radius)
+  control-select-menu-border-radius: var(--ha-card-border-radius)
+  # control-select-menu-background-color: var(ha-card-background)
+  # control-select-menu-background-opacity: '1' 
+  
+  # States
+  state-active-color: var(--primary-color)
+  state-on-color: var(--wa-teal)
+  state-off-color: var(--wa-red)
+  state-home-color: var(--wa-teal)
+  state-not_home-color: var(--wa-red)
+  state-unknown-color: var(--wa-gray)
+  state-idle-color: var(--wa-gray)
+  state-climate-cool-color: var(--primary-color)
+  state-climate-heat-color: var(--primary-color)
+  state-climate-heat-cool-color: var(--primary-color)
+  state-climate-dry-color: var(--primary-color)
+  state-climate-fan_only-color: var(--primary-color)
+  state-humidifier-on-color: var(--primary-color)
+  state-dehumidifier-on-color: var(--primary-color)
+  state-fan-on-color: var(--primary-color)
+  state-binary_sensor-on-color: var(--primary-color)
+  state-switch-on-color: var(--primary-color)
+  state-cover-open-color: var(--primary-color)
 
   # Modals
   ha-dialog-border-radius: '10px'
 
-  # Gauges
-  info-color: var(--primary-color)
+  # Expansion panels
+  expansion-panel-summary-padding: '0 16px'
+  expansion-panel-content-padding: '0 16px'
 
   # Tables
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
   data-table-background-color: var(--primary-background-color)
+
+  # Energy
+  energy-grid-consumption-color: var(--wa-bubble-bg)
+  energy-grid-return-color: var(--green-color)
+  energy-solar-color: var(--yellow-color)
+  energy-non-fossil-color: var(--green-color)
+  energy-battery-out-color: var(--primary-text-color)
+  energy-battery-in-color: var(--primary-text-color)
+  energy-gas-color: var(--red-color)
+  energy-water-color: var(--cyan-color)
+
+  # Ripple
+  mdc-ripple-color: var(--primary-color)
 
   # Custom cards
   # Mini graph card
@@ -126,8 +192,13 @@ whatsapp_theme:
   sun-card-subtitle-color: var(--secondary-text-color);
 
   modes:
+    # -----------------------------------------------------------
     # Dark mode
+    # -----------------------------------------------------------
     dark:
+      # Background
+      lovelace-background: var(--wa-bg-dark)
+
       # Header:
       app-header-background-color: var(--wa-header-dark)
       app-header-text-color: var(--wa-text-dark)
@@ -145,6 +216,19 @@ whatsapp_theme:
       divider-color: rgba(255,255,255,.08)
       accent-color: var(--wa-primary-dark)
       mdc-theme-primary: var(--wa-primary-dark)
+
+      # Replace default colors
+      teal-color: var(--wa-teal-dark)
+      green-color: var(--wa-green-dark)
+      blue-color: var(--wa-blue-dark) 
+      pink-color: var(--wa-pink-dark) 
+      purple-color: var(--wa-purple-dark) 
+      orange-color: var(--wa-orange-dark) 
+      red-color: var(--wa-red-dark) 
+      yellow-color: var(--wa-yellow-dark) 
+      cyan-color: var(--wa-cyan-dark) 
+      gray-color: var(--wa-gray-dark) 
+      black-color: var(--wa-black-dark) 
 
       # Text
       primary-text-color: var(--wa-text-dark)
@@ -216,7 +300,6 @@ whatsapp_theme:
       mdc-dialog-scrim-color: 'rgba(0, 0, 0, 0.5)'
 
       # Ripple
-      mdc-ripple-color: '#80d4c2'
       paper-tab-ink: var(--wa-primary-dark-2)
 
       # Chips
@@ -227,14 +310,6 @@ whatsapp_theme:
       state-icon-color: var(--wa-text-dark)
       state-icon-active-color: var(--wa-primary-dark)
       state-icon-unavailable-color: var(--disabled-text-color)
-      state-on-color: var(--wa-teal)
-      state-off-color: var(--wa-red)
-      state-home-color: var(--wa-teal)
-      state-not_home-color: var(--wa-red)
-      state-unknown-color: var(--wa-gray)
-      state-idle-color: var(--wa-gray)
-      state-climate-cool-color: var(--primary-color)
-      state-climate-heat-color: var(--primary-color)
 
       # Graphs
       graph-color-1: var(--wa-teal-dark)
@@ -254,14 +329,21 @@ whatsapp_theme:
       # Progressbar
       mdc-linear-progress-buffer-color: 'rgba(0,0,0,0.4)'
 
+    # -----------------------------------------------------------
     # Light mode
+    # -----------------------------------------------------------
     light:
+      # Background
+      lovelace-background: var(--wa-bg)
+
       # Header:
       app-header-background-color: var(--wa-header)
       app-header-text-color: '#fff'
       app-header-border-bottom: 1px solid var(--wa-bg)
       app-header-edit-background-color: var(--wa-primary-2)
       app-header-edit-text-color: var(--wa-text-dark)
+      # app-header-selection-bar-color: var(--primary-color)
+      # app-header-selection-text-color: var(--primary-color)
 
       # Main UI
       primary-color: var(--wa-primary)
@@ -271,6 +353,19 @@ whatsapp_theme:
       divider-color: 'rgba(0, 0, 0, .08)'
       accent-color: var(--wa-primary)
       mdc-theme-primary: var(--wa-primary)
+
+      # Replace default colors
+      teal-color: var(--wa-teal)
+      green-color: var(--wa-green)
+      blue-color: var(--wa-blue) 
+      pink-color: var(--wa-pink) 
+      purple-color: var(--wa-purple) 
+      orange-color: var(--wa-orange) 
+      red-color: var(--wa-red) 
+      yellow-color: var(--wa-yellow) 
+      cyan-color: var(--wa-cyan) 
+      gray-color: var(--wa-gray) 
+      black-color: var(--wa-black) 
 
       # Text
       primary-text-color: var(--wa-text)
@@ -342,7 +437,6 @@ whatsapp_theme:
       mdc-dialog-scrim-color: 'rgba(0, 0, 0, 0.5)'
 
       # Ripple
-      mdc-ripple-color: '#80d4c2'
       paper-tab-ink: var(--wa-primary-2)
 
       # Chips
@@ -353,14 +447,6 @@ whatsapp_theme:
       state-icon-color: var(--wa-text)
       state-icon-active-color: var(--wa-header)
       state-icon-unavailable-color: var(--disabled-text-color)
-      state-on-color: var(--wa-teal)
-      state-off-color: var(--wa-red)
-      state-home-color: var(--wa-teal)
-      state-not_home-color: var(--wa-red)
-      state-unknown-color: var(--wa-gray)
-      state-idle-color: var(--wa-gray)
-      state-climate-cool-color: var(--primary-color)
-      state-climate-heat-color: var(--primary-color)
 
       # Graphs
       graph-color-1: var(--wa-teal)
