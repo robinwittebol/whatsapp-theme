@@ -459,9 +459,6 @@ whatsapp_theme:
       graph-color-8: var(--wa-cyan)
       graph-color-9: var(--wa-green)
 
-      # Input
-      input-idle-line-color: var(--secondary-text-color)
-
       # Toasts
       paper-toast-background-color: var(--wa-modal-bg)
       paper-toast-color: var(--primary-text-color)
