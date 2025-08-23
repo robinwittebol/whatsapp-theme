@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2025-08-24
+
+- Removed paper-\* properties
+- Renamed wa-\* to wapp-\* to prevent conflicts
+- Added ha-color-primary-\* color palette properties
+- Added ha-heading-card-title-color property
+
 ## [1.2.0] - 2024-07-07
 
 - Added energy dashboard colors
